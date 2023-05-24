@@ -91,12 +91,12 @@ public class AdapterKuliner extends RecyclerView.Adapter<AdapterKuliner.VHKuline
                     pesan.setPositiveButton("Ubah", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
-                            Intent varIntent = new Intent(ctx, UbahActivity.class);
-                            varIntent.putExtra("varID", tvID.getText().toString());
-                            varIntent.putExtra("varNama", tvNama.getText().toString());
-                            varIntent.putExtra("varAsal", tvAsal.getText().toString());
-                            varIntent.putExtra("varDesc", tvDeskripsiSingkat.getText().toString());
-                            ctx.startActivity(varIntent);
+                            Intent pindah = new Intent(ctx, UbahActivity.class);
+                            pindah.putExtra("xID", tvID.getText().toString());
+                            pindah.putExtra("xNama", tvNama.getText().toString());
+                            pindah.putExtra("xAsal", tvAsal.getText().toString());
+                            pindah.putExtra("xDesc", tvDeskripsiSingkat.getText().toString());
+                            ctx.startActivity(pindah);
                         }
                     });
 
